@@ -33,4 +33,4 @@ RK4 flight model (drag/Magnus/seam-shifted-wake), Three.js frontend.
 
 - "Real golf game"-style arm/hand delivery mode (grip + arm slot stand-in
   exists as seam toggle only).
-- HB/IVB movement chart panel; GitHub remote/hosting.
+- HB/IVB movement chart panel; hosting/Pages deploy.
