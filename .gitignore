@@ -5,3 +5,4 @@ pipeline/data/
 pipeline/.venv/
 __pycache__/
 *.pyc
+.playwright-cli/
