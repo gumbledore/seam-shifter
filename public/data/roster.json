@@ -1,0 +1,62 @@
+[
+ {
+  "id": "crochet",
+  "player": "Crochet, Garrett",
+  "hand": "L",
+  "n": 197
+ },
+ {
+  "id": "degrom",
+  "player": "deGrom, Jacob",
+  "hand": "R",
+  "n": 200
+ },
+ {
+  "id": "fried",
+  "player": "Fried, Max",
+  "hand": "L",
+  "n": 276
+ },
+ {
+  "id": "imai",
+  "player": "Imai, Tatsuya",
+  "hand": "R",
+  "n": 197
+ },
+ {
+  "id": "ohtani",
+  "player": "Ohtani, Shohei",
+  "hand": "R",
+  "n": 215
+ },
+ {
+  "id": "sale",
+  "player": "Sale, Chris",
+  "hand": "L",
+  "n": 160
+ },
+ {
+  "id": "sasaki",
+  "player": "Sasaki, Roki",
+  "hand": "R",
+  "n": 179
+ },
+ {
+  "id": "skenes",
+  "player": "Skenes, Paul",
+  "hand": "R",
+  "n": 267
+ },
+ {
+  "id": "skubal",
+  "player": "Skubal, Tarik",
+  "hand": "L",
+  "n": 200
+ },
+ {
+  "id": "yamamoto",
+  "player": "Yamamoto, Yoshinobu",
+  "hand": "R",
+  "n": 240
+ }
+]

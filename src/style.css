@@ -1,0 +1,85 @@
+* { box-sizing: border-box; margin: 0; }
+:root {
+  --bg: #101418;
+  --panel: #171d24;
+  --line: #2a333d;
+  --text: #d8e0e8;
+  --dim: #8494a4;
+  --accent: #e8543f;
+  --ghost: #4fa3e0;
+  --target: #e0b34f;
+}
+html, body, #app { height: 100%; }
+body {
+  background: var(--bg); color: var(--text);
+  font: 13px/1.45 "Segoe UI", system-ui, sans-serif;
+  overflow: hidden;
+}
+#app { display: flex; }
+
+#panel {
+  width: 300px; min-width: 300px; height: 100%;
+  background: var(--panel); border-right: 1px solid var(--line);
+  padding: 14px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px;
+}
+#panel h1 { font-size: 17px; letter-spacing: 2px; font-weight: 600; color: var(--accent); }
+
+#mode-tabs { display: flex; gap: 6px; }
+.tab {
+  flex: 1; padding: 5px 0; background: none; border: 1px solid var(--line);
+  color: var(--dim); border-radius: 4px; cursor: pointer; font: inherit;
+}
+.tab.active { color: var(--text); border-color: var(--accent); }
+
+.ctl { margin-bottom: 2px; }
+.ctl label { display: flex; justify-content: space-between; color: var(--dim); }
+.ctl label b { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+.ctl input[type="range"] { width: 100%; accent-color: var(--accent); }
+.seg { display: flex; gap: 6px; margin: 4px 0; }
+.seg button {
+  flex: 1; padding: 4px 0; background: none; border: 1px solid var(--line);
+  color: var(--dim); border-radius: 4px; cursor: pointer; font: inherit;
+}
+.seg button.active { color: var(--text); border-color: var(--accent); }
+
+#readouts {
+  border-top: 1px solid var(--line); padding-top: 8px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4px 10px;
+  font-variant-numeric: tabular-nums;
+}
+#readouts .ro { display: flex; justify-content: space-between; }
+#readouts .ro span { color: var(--dim); }
+#readouts .ro b { font-weight: 600; }
+
+#ghost-row { display: flex; gap: 6px; }
+#ghost-row button, #challenge-box button, #time-bar button {
+  padding: 5px 10px; background: none; border: 1px solid var(--line);
+  color: var(--text); border-radius: 4px; cursor: pointer; font: inherit;
+}
+#ghost-row button:hover, .seg button:hover, .tab:hover { border-color: var(--dim); }
+
+#challenge-box { border-top: 1px solid var(--line); padding-top: 8px; }
+#challenge-box select { width: 100%; margin-bottom: 6px; background: var(--bg); color: var(--text); border: 1px solid var(--line); padding: 4px; border-radius: 4px; font: inherit; }
+#challenge-box .score { font-size: 26px; font-weight: 700; color: var(--target); }
+#challenge-box .detail { color: var(--dim); }
+#challenge-box .hint { color: var(--dim); margin: 4px 0; }
+.hidden { display: none !important; }
+
+#stage { flex: 1; position: relative; }
+#scene { width: 100%; height: 100%; display: block; }
+
+#view-bar { position: absolute; top: 10px; left: 12px; display: flex; gap: 6px; }
+#view-bar button {
+  padding: 4px 10px; background: rgba(23, 29, 36, 0.85); border: 1px solid var(--line);
+  color: var(--dim); border-radius: 4px; cursor: pointer; font: inherit;
+}
+#view-bar button.active { color: var(--text); border-color: var(--accent); }
+
+#time-bar {
+  position: absolute; left: 12px; right: 12px; bottom: 10px;
+  display: flex; gap: 8px; align-items: center;
+  background: rgba(23, 29, 36, 0.85); border: 1px solid var(--line);
+  border-radius: 6px; padding: 6px 10px;
+}
+#time-bar select { background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: 4px; padding: 2px 4px; font: inherit; }
+#scrub { flex: 1; accent-color: var(--accent); }

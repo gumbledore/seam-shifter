@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>seam shifter</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="panel">
+      <h1>seam shifter</h1>
+      <div id="mode-tabs">
+        <button id="tab-sandbox" class="tab active">Sandbox</button>
+        <button id="tab-challenge" class="tab">Challenge</button>
+      </div>
+      <div id="controls"></div>
+      <div id="challenge-box" class="hidden"></div>
+      <div id="readouts"></div>
+      <div id="ghost-row">
+        <button id="btn-pin">Pin as ghost</button>
+        <button id="btn-clear-ghosts">Clear ghosts</button>
+      </div>
+    </aside>
+    <main id="stage">
+      <canvas id="scene"></canvas>
+      <div id="view-bar">
+        <button data-view="catcher" class="active">Catcher</button>
+        <button data-view="pitcher">Pitcher</button>
+        <button data-view="side">Side</button>
+        <button data-view="top">Top</button>
+      </div>
+      <div id="time-bar">
+        <button id="btn-replay" title="replay">&#8635;</button>
+        <select id="speed">
+          <option value="1">1&times;</option>
+          <option value="0.25" selected>&frac14;&times;</option>
+          <option value="0.05">1/20&times;</option>
+        </select>
+        <input id="scrub" type="range" min="0" max="1000" value="0" />
+      </div>
+    </main>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

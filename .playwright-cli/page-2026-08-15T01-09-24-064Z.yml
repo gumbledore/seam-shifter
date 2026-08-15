@@ -1,0 +1,90 @@
+- generic [ref=f4e2]:
+  - complementary [ref=f4e3]:
+    - heading "seam shifter" [level=1] [ref=f4e4]
+    - generic [ref=f4e5]:
+      - button "Sandbox" [ref=f4e6] [cursor=pointer]
+      - button "Challenge" [ref=f4e7] [cursor=pointer]
+    - generic [ref=f4e8]:
+      - generic [ref=f4e9]:
+        - generic [ref=f4e10]:
+          - generic [ref=f4e11]: Velocity (mph)
+          - generic [ref=f4e12]: "82"
+        - slider [ref=f4e13]: "82"
+      - generic [ref=f4e14]:
+        - generic [ref=f4e15]:
+          - generic [ref=f4e16]: Spin rate (rpm)
+          - generic [ref=f4e17]: "2600"
+        - slider [ref=f4e18]: "2600"
+      - generic [ref=f4e19]:
+        - generic [ref=f4e20]:
+          - generic [ref=f4e21]: Spin direction
+          - generic [ref=f4e22]: 9:20
+        - slider [ref=f4e23]: "-80"
+      - generic [ref=f4e24]:
+        - generic [ref=f4e25]:
+          - generic [ref=f4e26]: Gyro angle (deg)
+          - generic [ref=f4e27]: "15"
+        - slider [ref=f4e28]: "15"
+      - generic [ref=f4e29]:
+        - generic [ref=f4e30]:
+          - generic [ref=f4e31]: Release side (ft)
+          - generic [ref=f4e32]: "-1.8"
+        - slider [ref=f4e33]: "-1.8"
+      - generic [ref=f4e34]:
+        - generic [ref=f4e35]:
+          - generic [ref=f4e36]: Release height (ft)
+          - generic [ref=f4e37]: "5.9"
+        - slider [ref=f4e38]: "5.9"
+      - generic [ref=f4e39]:
+        - generic [ref=f4e40]:
+          - generic [ref=f4e41]: Extension (ft)
+          - generic [ref=f4e42]: "6.4"
+        - slider [ref=f4e43]: "6.4"
+      - generic [ref=f4e44]:
+        - generic [ref=f4e45]:
+          - generic [ref=f4e46]: Target side (ft)
+          - generic [ref=f4e47]: "0.5"
+        - slider [ref=f4e48]: "0.5"
+      - generic [ref=f4e49]:
+        - generic [ref=f4e50]:
+          - generic [ref=f4e51]: Target height (ft)
+          - generic [ref=f4e52]: "2"
+        - slider [ref=f4e53]: "2"
+      - generic [ref=f4e54]:
+        - button "4-seam" [ref=f4e55] [cursor=pointer]
+        - button "2-seam" [ref=f4e56] [cursor=pointer]
+    - generic [ref=f4e57]:
+      - generic [ref=f4e58]:
+        - generic [ref=f4e59]: IVB
+        - generic [ref=f4e60]: +0.0 in
+      - generic [ref=f4e61]:
+        - generic [ref=f4e62]: HB
+        - generic [ref=f4e63]: +0.0 in
+      - generic [ref=f4e64]:
+        - generic [ref=f4e65]: "@plate"
+        - generic [ref=f4e66]: 0.0 mph
+      - generic [ref=f4e67]:
+        - generic [ref=f4e68]: flight
+        - generic [ref=f4e69]: 444 ms
+      - generic [ref=f4e70]:
+        - generic [ref=f4e71]: efficiency
+        - generic [ref=f4e72]: 97%
+      - generic [ref=f4e73]:
+        - generic [ref=f4e74]: tilt
+        - generic [ref=f4e75]: 9:20
+    - generic [ref=f4e76]:
+      - button "Pin as ghost" [active] [ref=f4e77] [cursor=pointer]
+      - button "Clear ghosts" [ref=f4e78] [cursor=pointer]
+  - main [ref=f4e79]:
+    - generic [ref=f4e81]:
+      - button "Catcher" [ref=f4e82] [cursor=pointer]
+      - button "Pitcher" [ref=f4e83] [cursor=pointer]
+      - button "Side" [ref=f4e84] [cursor=pointer]
+      - button "Top" [ref=f4e85] [cursor=pointer]
+    - generic [ref=f4e86]:
+      - button "↻" [ref=f4e87] [cursor=pointer]
+      - combobox [ref=f4e88]:
+        - option "1×"
+        - option "¼×" [selected]
+        - option "1/20×"
+      - slider [ref=f4e89]: "471"
